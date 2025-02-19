@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+/* Hide default cursor */
+body {
+    overflow-x: hidden;
+    background-color: black;
+    font-family: "Radley", serif;
+    font-weight: 400;
+  font-style: normal;
+
+  }
+  
+  

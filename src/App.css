@@ -1,0 +1,73 @@
+
+progress::-webkit-progress-bar {
+    background-color: #f3f4f6; 
+    border-radius: 0.25; 
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #3b82f6; 
+    border-radius: 0.25rem;
+  }
+  
+
+  progress::-moz-progress-bar {
+    background-color: #00ff08; 
+    border-radius: 0.25rem;
+  }
+
+  @keyframes marquee {
+   0%{
+    transform: translateX(0%);
+   } 
+   100%{
+    transform: translateX(-100%);
+   }
+    
+  }
+  .animate-slider {
+ 
+      animation: marquee 20s linear infinite;
+
+  }
+  @media (min-width: 768px) {
+    .animate-marquee {
+      animation-duration: 60s; /* Slower animation on desktop */
+    }
+  }
+  @keyframes scrollNormal {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0%); }
+  }
+  @keyframes scrollReverse {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
+  }
+  .animate-scrollNormal { animation: scrollNormal 20s linear infinite; }
+  .animate-scrollReverse { animation: scrollReverse 20s linear infinite; }
+  .text-stroke { -webkit-text-stroke: 2px rgba(44, 124,170,0.3); }
+  @keyframes Carousel {
+    0%{
+     transform: translateX(0%);
+    } 
+    100%{
+     transform: translateX(-100%);
+    }
+    
+  }
+  .animate-car
+  {
+    animation: Carousel 10s linear infinite;
+  }
+  @keyframes Carousel2 {
+    0%{
+     transform: translateX(-100%);
+    } 
+    100%{
+     transform: translateX(0%);
+    }
+    
+  }
+  .animate-carousel
+  {
+    animation: Carousel2 10s linear infinite;
+  }

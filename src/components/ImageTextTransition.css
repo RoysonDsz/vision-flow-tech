@@ -1,0 +1,91 @@
+/* ImageTextTransition.css */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200%; /* Increased width */
+  height: 100vh;
+  padding: 2px;
+  background-color: #000;
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  position: relative;
+  left: 80px;
+}
+
+.text-section h2 {
+  font-size: 2rem;
+  color: #eeeeff;
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  color: #f3ebeb;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 200px;
+}
+
+.image-section img {
+  border-radius: 80px;
+  box-shadow: 0 4px 8px rgba(230, 223, 223, 0.2);
+}
+
+
+
+@keyframes shimmer {
+  0% { background-position: -100%;}
+  100% { background-position:100%;}
+}
+
+.shimmering-text {
+  font-size: 8xl;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #00bce6, #eeeeff, #0D8DD7);
+  background-size: 200%;
+  -webkit-background-clip: text; /* For Safari and older versions of Chrome */
+  background-clip: text; /* Standard property */
+  color: transparent;
+  animation: shimmer 3s linear infinite;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.shimmering-text-two {
+  font-size: 8xl;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #00bce6, #0D8DD7, #eeeeff);
+  background-size: 200%;
+  -webkit-background-clip: text; /* For Safari and older versions of Chrome */
+  background-clip: text; /* Standard property */
+  color: transparent;
+  animation: shimmer 3s linear infinite;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+
+@keyframes border-animation {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-border {
+  animation: border-animation 3s linear infinite;
+  width: 200%; /* Ensures the animation flows smoothly */
+}
